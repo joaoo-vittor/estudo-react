@@ -166,3 +166,39 @@ export const Home = () => {
 //     );
 //   }
 // }
+
+/*
+
+import { Component } from 'react'
+
+import './style.css';
+
+
+export class Home extends Component {
+  state = {
+    counter: 0
+  }
+
+  handleClick = () =>{    
+    this.setState((prevState, prevProps) => {
+      console.log(prevProps)
+      console.log(prevState)
+      return { counter: prevState.counter + 1 }
+    }, 
+    () => {
+      console.log(this.state.counter)
+    })
+  }
+
+  render() {
+    return (
+      <div className='container'>
+        <h1>{this.state.counter}</h1>
+        <button onClick={this.handleClick}>Incrementar</button>
+      </div>
+    )
+  }
+}
+
+*/
+
