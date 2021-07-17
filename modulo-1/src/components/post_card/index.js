@@ -1,14 +1,13 @@
-import './style.css'
+import './style.css';
 
-export const PostCard = ({cover, body, id, title}) => {
+export const PostCard = ({ cover, body, id, title }) => {
   return (
     <div className="post">
       <img src={cover} alt={title} />
-      <div className='post-content'>
+      <div className="post-content">
         <h2>{title}</h2>
         <p>{body}</p>
       </div>
     </div>
-  )
-}
-
+  );
+};
