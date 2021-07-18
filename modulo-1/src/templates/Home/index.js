@@ -10,7 +10,7 @@ export const Home = () => {
   const [posts, setPosts] = useState([]);
   const [allposts, setAllPosts] = useState([]);
   const [page, setPage] = useState(0);
-  const [postPerPage] = useState(10);
+  const [postPerPage] = useState(2);
   const [searchValue, setSearchValue] = useState('');
 
   const noMorePosts = page + postPerPage >= allposts.length;
@@ -164,12 +164,12 @@ export class Home extends Component {
     counter: 0
   }
 
-  handleClick = () =>{    
+  handleClick = () =>{
     this.setState((prevState, prevProps) => {
       console.log(prevProps)
       console.log(prevState)
       return { counter: prevState.counter + 1 }
-    }, 
+    },
     () => {
       console.log(this.state.counter)
     })
