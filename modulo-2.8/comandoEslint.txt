@@ -1,0 +1,13 @@
+-> Iniciar o eslint
+
+$ npx eslint --init
+
+
+-> intalar o prettier
+
+$ npm install -d prettier eslint-config-prettier eslint-plugin-prettier
+
+
+-> Corrigir os arquivos
+
+$ npx eslint src/**/*.js --fix
