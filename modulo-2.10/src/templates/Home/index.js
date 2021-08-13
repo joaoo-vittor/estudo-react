@@ -13,6 +13,9 @@ export const Home = () => {
       .catch((e) => console.error(e.name));
   };
 
+  console.log("bla");
+  console.log("bla");
+
   return (
     <div>
       <Heading />
